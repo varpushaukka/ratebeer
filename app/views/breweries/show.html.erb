@@ -1,13 +1,14 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
-  <%= @brewery.name %>
+  <h2><%= @brewery.name %></h2>
+</p>
+
+<p> oluita <%= @brewery.beers.count %> 
 </p>
 
 <p>
-  <strong>Year:</strong>
-  <%= @brewery.year %>
+  <i>perustettu vuonna <%= @brewery.year %></i>
 </p>
 
 <%= link_to 'Edit', edit_brewery_path(@brewery) %> |
